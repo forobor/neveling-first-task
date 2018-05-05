@@ -1,0 +1,32 @@
+.navigation {
+    margin-top: 50px;
+    padding: 16px 280px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffffff 0%,#eaeaea 25%,#eaeaea 25%,#eaeaea 75%,#ffffff 99%);    
+    background: -moz-linear-gradient(left, #ffffff 0%, #eaeaea 25%, #eaeaea 25%, #eaeaea 75%, #ffffff 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%,#eaeaea 25%,#eaeaea 25%,#eaeaea 75%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.navigation-item {
+    font-size: 14px;
+    cursor: pointer;   
+}
+@media only screen and (max-device-width: 411px) {
+    .navigation {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+        z-index: 10;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+    }
+    .navigation-item {
+        margin-top: 8px;
+        text-align: center;
+    }
+}

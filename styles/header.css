@@ -1,0 +1,85 @@
+.header {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 14px; 
+}
+
+.header-nav {
+    list-style-type: none;
+}
+
+.header-link-title {
+    color:lightgray;
+}
+.header-link-img {
+    size: 2x;
+    color:lightgray;    
+}
+
+.header-item {
+    display: inline-block;
+}
+
+.header-item:after {
+    content: '>';
+}
+
+.header-item:last-child:after {
+    content: '';
+}
+
+.header-image {
+    width:175px;
+    height: 64px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    background-image: url(https://www.demandware.com/uploads/partners/LOGO_Neveling_web.png);
+    background-size: cover;
+}
+
+
+
+
+@media only screen and (max-device-width: 411px) {
+    .header {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    .header-navigation {
+        display: flex;
+        justify-content: space-between;        
+    }
+    .hamburger {
+        width: 15px;
+        height: 1px;
+        background: black;
+        margin-top:5px; 
+        position: relative; 
+    }
+    .hamburger::before {
+        content: '';
+        position: absolute;
+        bottom: 5px; 
+        width: 15px;
+        height: 1px;
+        background: black;
+    }
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        top: 5px; 
+        width: 15px;
+        height: 1px;
+        background: black;
+    }
+
+    .header-image {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,39 @@
+.breadcrumb {
+    margin-left: 100px;
+    margin-top: 15px;
+    color:lightgray;   
+    font-size: 12px; 
+}
+
+.breadcrumb-nav {
+    list-style-type: none;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    color: lightgrey;
+}
+
+.breadcrumb-item:after {
+    content: '>';
+    margin-left: 5px;    
+}
+
+.breadcrumb-item:last-child {
+    color: #073064
+}
+
+.breadcrumb-item:last-child:after {
+    content: '';
+}
+
+.breadcrumb-link {
+    color: inherit;    
+}
+
+@media only screen and (max-device-width: 411px) {
+    .breadcrumb {
+        margin:0;
+        width: 5px;
+    }
+}

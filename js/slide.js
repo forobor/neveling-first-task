@@ -56,7 +56,6 @@ $(document).ready(function(){
         changePostInfo(i)
     })
 
-    setInterval(() => document.getElementById('slickButton').click(), 10000)
 
     $('.hamburger').click(() => {
         $(".navigation").toggle(100);

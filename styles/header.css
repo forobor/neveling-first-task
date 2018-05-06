@@ -29,31 +29,37 @@
 }
 
 .header-image {
-    width:175px;
-    height: 64px;
+    width: 175px;
+    height: 40px;
+    margin-top: 10px;    
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     top:0;
-    background-image: url(https://www.demandware.com/uploads/partners/LOGO_Neveling_web.png);
-    background-size: cover;
+    background-image: url(https://www.ostsee-expedition.de/wp-content/uploads/2013/10/Logo_rgb_transparent_600px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
 
 
-@media only screen and (max-device-width: 411px) {
+@media only screen and (max-device-width: 600px) {
     .header {
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-right: 10px;
+        margin: 10px 0px 0 0px;
         font-size: 10px;
     }
     .header-navigation {
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .header-image {
+        position: static;
     }
     .hamburger {
         width: 15px;
@@ -79,7 +85,5 @@
         background: black;
     }
 
-    .header-image {
-        margin-top: 5px;
-    }
+
 }

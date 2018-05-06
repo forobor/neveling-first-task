@@ -17,15 +17,14 @@ $(document).ready(function(){
         }
     ]
 
-    // for(let j = 0; j< posts.length; j++) {
-    //     $('.dots').append(`<div class='dot' name=${j}/>`);
-    // }
-    // let i=0;
-    // $('.dot').get(0).classList.add("active")
+    for(let j = 0; j < posts.length; j++) {
+        $('.dots').append(`<div class='dot' name=${j}/>`);
+    }
+    $('.dot').get(0).classList.add("active")
+    let i=0;
 
     const changePostInfo = id => {
-        $('.stage').animate({opacity: 0},250,
-            () => {
+        $('.stage').animate({opacity: 0}, 500, () => {
                 $('.stage-title').text(`${posts[id].title}`);
                 $('.stage-text').text(`${posts[id].text}`);
                 $('.stage').css({'background-image':`url(${posts[id].background})`});
@@ -33,7 +32,7 @@ $(document).ready(function(){
                 dot.classList.add("active");
             }
         );
-        $('.stage').animate({opacity: 1},450);        
+        $('.stage').animate({opacity: 1},700);        
     }
 
     const removeActive = id => {
@@ -56,6 +55,8 @@ $(document).ready(function(){
         i = +event.target.attributes.name.value;
         changePostInfo(i)
     })
+
+    setInterval(() => document.getElementById('slickButton').click(), 10000)
 
     $('.hamburger').click(() => {
         $(".navigation").toggle(100);

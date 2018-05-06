@@ -1,9 +1,9 @@
 .stage {
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 1312px;
     height: 420px;
-    max-width:100%;
+    max-width: 100%;
     background-image: url(https://i.pinimg.com/originals/a1/d8/ba/a1d8bae4d65f3739e616fb1e2fe001cb.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -78,8 +78,25 @@
     background: radial-gradient(gray, white );
 }
 
-@media only screen and (max-device-width: 411px) {
+@media only screen and (max-device-width: 600px) {
+    .stage {
+        margin-top: 5px;
+    }
     .stage-panel {
-        margin:0;
+        margin: 0;
+        width: 250px;
+        padding: 20px 25px 10px 25px;
+    }
+    #slickButton {
+        width: 45px;
+        height: 45px;
+        margin-left: 10px;
+
+    }
+    .stage-title {
+        font-size: 32px;
+    }
+    .stage-text {
+        font-size: 16px;
     }
 }

@@ -1,9 +1,7 @@
 @import "./header.css";
 @import "./navigation.css";
-/*
 @import "./breadcrumb.css";
-@import "./stage.css"; */
-
+@import "./stage.css"; 
 
 * {
   margin: 0;

@@ -4,15 +4,15 @@
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #ffffff 0%,#eaeaea 25%,#eaeaea 25%,#eaeaea 75%,#ffffff 99%);    
-    background: -moz-linear-gradient(left, #ffffff 0%, #eaeaea 25%, #eaeaea 25%, #eaeaea 75%, #ffffff 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ffffff 0%,#eaeaea 25%,#eaeaea 25%,#eaeaea 75%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(to right, #ffffff 0%, #eaeaea 25%, #eaeaea 25%, #eaeaea 75%, #ffffff 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(to right, #ffffff 0%,#eaeaea 25%,#eaeaea 25%,#eaeaea 75%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
 }
 
 .navigation-item {
     font-size: 14px;
     cursor: pointer;   
 }
-@media only screen and (max-device-width: 411px) {
+@media only screen and (max-device-width: 600px) {
     .navigation {
         display: none;
         width: 100%;
